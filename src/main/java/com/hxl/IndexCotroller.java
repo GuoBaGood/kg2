@@ -19,7 +19,7 @@ public class IndexCotroller {
 	@RequestMapping("/")
 	@ResponseBody
 	public String ss() {
-		return "I am a good sdfd  ert Student!";
+		return "I am sofdflsjdfsldfsjfl a good sdfd df ert Student!";
 	}
 	
 	
