@@ -1,0 +1,1 @@
+在src/main/resources:创建一个application.properties（名字必须统一）文件——设置全局
