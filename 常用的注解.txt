@@ -1,0 +1,1 @@
+@Controller:类似一个action的属性,标记一个类的属性

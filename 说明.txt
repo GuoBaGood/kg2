@@ -1,1 +1,23 @@
-在src/main/resources:创建一个application.properties（名字必须统一）文件——设置全局
+·① 在src/main/resources:创建一个application.properties（名字必须统一）文件——设置全局:
+	全局包括：端口号、程序运行的入口地址
+·② 在application.yml文件格式中：
+	server：
+		port： 8088
+		context-path： /hxl
+	即不用每次都要写server了，记得：后面加空格
+·③ spring-boot-starter-...————————成为starter pom:即jar包
+·④ 程序的入口改为了.../hxl;那么再次写一个入口的时候，路径为：http://localhost:8088/hxl/D/yyys
+·⑤ 通过@Value的注解获取到属性值：
+	@Value("${book.name}")
+	private String name;
+	但有个问题：如果全局变量文件中的变量特别多的话：
+	所以第二种办法：
+	·在application.properties文件中添加：
+		stu.age=12
+		stu.sex=boy
+	·在类上方写一个注释@ConfigurationProperties(prefix="stu")//其中参数是全局变量开头发那个
+	·在controller中的私有全局变量，其中变量名要与stu后缀保持一致：
+		private int age;
+	 	private String sex;
+	·千万要记住变量的set/get方法；
+	

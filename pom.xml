@@ -15,13 +15,25 @@
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
- <!-- 使用SpringMVC和Spring的jar包;父工程已经指定了版本，子工程就可以不需要了 -->
+ 	
  	<dependencies>
+ 		<!-- 使用SpringMVC和Spring的jar包;父工程已经指定了版本，子工程就可以不需要了 -->
  		<dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
                 <!-- <version>2.1.1.RELEASE</version> -->
-            </dependency>
+        </dependency>
+        
+        <!-- 设置Springboot的强制关闭服务 -->
+        <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+	    </dependency>
+        <dependency>
+        	<groupId>org.springframework.boot</groupId>
+        	<artifactId>spring-boot-configuration-processor</artifactId>
+        	<optional>true</optional>
+        </dependency>
  	</dependencies>
  	
  	<build>

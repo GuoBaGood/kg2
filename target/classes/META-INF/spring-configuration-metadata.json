@@ -1,0 +1,22 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.hxl.IndexCotroller",
+      "name": "stu",
+      "type": "com.hxl.IndexCotroller"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.hxl.IndexCotroller",
+      "name": "stu.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.hxl.IndexCotroller",
+      "name": "stu.sex",
+      "type": "java.lang.String"
+    }
+  ]
+}
