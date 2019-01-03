@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * @author ¹ø°Í²»»áºı
+ * @author é”…å·´ä¸ä¼šç³Š
  *
  */
 
-//×Ô¶¯ÅäÖÃ£¬ÎŞĞëxmlÎÄ¼ş
+//è‡ªåŠ¨é…ç½®ï¼Œæ— é¡»xmlæ–‡ä»¶,æ’é™¤ï¼š@EnableAutoConfiguration(exclude={xxx.class})â€”â€”æ’é™¤è¿™ä¸ªç±»çš„è‡ªåŠ¨é…ç½®
 @EnableAutoConfiguration
 @Controller
 public class IndexCotroller {
@@ -23,7 +23,7 @@ public class IndexCotroller {
 	}
 	
 	
-	//Èë¿Ú
+	//å…¥å£
 	public static void main(String args[]) {
 		SpringApplication.run(IndexCotroller.class, args);
 	}
