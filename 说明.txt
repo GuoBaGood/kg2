@@ -20,4 +20,19 @@
 		private int age;
 	 	private String sex;
 	·千万要记住变量的set/get方法；
+	只写一个注释，可以使用多个了；
+·⑥两种启动方法：
+	·在主类点击run as ——java application
+	·右击项目——run as —— Spring boot APP
+·⑦profile的配置
+	针对不同的环境对不同的配置提供支持：如果把所有的全局变量都写在application.properties文件中，多而不好区分；
+	为解决这些问题：application-*.properties文件：
+		application-prod.properties;//生产环境的；
+		application-sit.properties; //测试环境的；
+		application-dev.properties; //开发环境下；
+	那么到底用哪个呢？所有在全局变量文件application.properties中就去指明到底用哪个:
+		spring.profiles.active=prod //表明要要应用生产环境那个；
+		比如在开发环境下的端口号：8088；在测试找中用到的为8099；所有可以在全局配置文件里去指明用哪个；
+·⑧自动配置的原理：
+待续。。。。
 	
